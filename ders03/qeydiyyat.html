@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="https://httpbin.org/post" method="post">
+        <fieldset>
+            <legend>sexsi melumat</legend>
+        <p>
+            <label for="ad">Ad soyad *</label>
+            <input type="text" name="ad" id="ad" required minlength="3" placeholder="Ayan Memmedova">
+        </p>
+        <p>
+            <label for="email">E-mail *</label>
+            <input type="email" name="email" id="email" required>
+        </p>
+        <p>
+            <label for="sifre">sifre *</label>
+            <input type="password" name="sifre" id="sifre" required minlength="6">
+        </p>
+        <p>
+            <label for="dogum">dogum tarixi</label>
+            <input type="data" name="dogum" id="dogum" max="2010-12-31">
+        </p>
+        </fieldset>
+        <fieldset>
+            <legend>secimler</legend>
+            <p>
+                <label for="kurs">kurs</label><br>
+                <select name="kurs" id="kurs">
+                    <option value="web">Web Development</option>
+                    <option value="helpdesk">helpdesk</option>
+                </select>
+            </p>
+            <p>Seviyye:</p>
+            <label><input type="radio" name="seviyye" value="bas" checked> Baslangic</label>
+            <label><input type="radio" name="seviyye" value="orta"> orta</label>
+            <P>Maraqlar:</P>
+            <label><input type="checkbox" name="maraq" value="dizayn"> dizayn</label>
+            <label><input type="checkbox" name="maraq" value="backend"> backend</label>
+            <p>
+                <label for="qeyd">qeyd</label><br>
+                <textarea name="qeyd" id="qeyd" rows="4"></textarea>
+            </p>
+            <label><input type="checkbox" name="razi" required>Sertlerle raziyam *</label>
+        </fieldset>
+        <p>
+            <button type="submit">Qeyiyyat</button>
+            <button type="reset">Temizle</button>
+        </p>
+    </form>
+</body>
+</html>
